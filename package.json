@@ -1,19 +1,18 @@
 {
-	"publisher": "rvest",
-	"name": "vs-code-prettier-eslint",
-	"displayName": "Prettier ESLint",
-	"description": "A Visual Studio Extension to format JavaScript and Typescript code using prettier-eslint package",
+	"publisher": "0x706b-extensions",
+	"name": "vs-code-prettier-eslint-8",
+	"displayName": "Prettier ESLint 8",
+	"description": "A Visual Studio Extension to format JavaScript and Typescript code using @0x706b/prettier-eslint-8 package",
 	"license": "MIT",
 	"icon": "icon.png",
 	"keywords": [
 		"eslint",
 		"prettier",
-		"prettier-eslint",
-		"multi-root ready"
+		"prettier-eslint"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/idahogurl/vs-code-prettier-eslint"
+		"url": "https://github.com/0x706b/vs-code-prettier-eslint"
 	},
 	"version": "3.0.4",
 	"engines": {
