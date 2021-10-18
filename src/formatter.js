@@ -1,10 +1,5 @@
-import format from 'prettier-eslint';
+import { format } from '@0x706b/prettier-eslint-8';
 
 export default function formatText({ text, filePath }) {
-  const formatted = format({
-    text,
-    filePath,
-  });
-
-  return formatted;
+  return format({ text, filePath });
 }

@@ -22,5 +22,5 @@ export default {
     }),
     terser(),
   ],
-  external: ['vscode', 'fs', 'path', 'module', 'util'],
+  external: ['vscode', 'fs', 'path', 'module', 'util', '@0x706b/prettier-eslint-8'],
 };

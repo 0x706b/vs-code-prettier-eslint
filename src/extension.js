@@ -6,7 +6,7 @@ import { isFilePathMatchedByEslintignore, isFilePathMatchedByPrettierignore } fr
 
 let outputChannel;
 
-function formatter(document, range) {
+async function formatter(document, range) {
   try {
     if (
       isFilePathMatchedByEslintignore(document.fileName)
@@ -17,7 +17,7 @@ function formatter(document, range) {
       outputChannel.appendLine('File ignored. Matches entry in .eslintignore or .prettierignore');
     } else {
       const text = document.getText(range);
-      const formatted = format({
+      const formatted = await format({
         text,
         filePath: document.fileName,
       });
@@ -25,6 +25,7 @@ function formatter(document, range) {
     }
   } catch (err) {
     outputChannel.appendLine(`Error: ${err.message}`);
+    outputChannel.appendLine(`${err.stack}`)
   }
 }
 
